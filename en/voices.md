@@ -15,6 +15,8 @@ title: Voices & Models
 
 > Note: the **Remote API uses Confucius4** — a built-in Gradio client calls its service directly, with no model download required.
 
+> Note: the **Remote API and Edge TTS** are online/remote services and are currently in testing — these services are **not yet enabled** in the App Store version.
+
 Switch engines from the sidebar dropdown. After switching engines or models, reload the current file (chunking may change).
 
 ## Four voice modes

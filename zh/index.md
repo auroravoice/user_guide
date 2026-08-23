@@ -11,6 +11,8 @@ title: 曦光聆 · 简体中文
 
 ![中文朗读界面](../pics/screenshot_chinese_reading.png){: style="max-width:80%;height:auto;display:block;margin:16px auto;border:1px solid #ddd;border-radius:6px;"}
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7lehH5ZEo2U?si=AGqQimYwtqsgysTr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## 核心特性
 
 - **本地推理**：基于 MLX，模型跑在你自己的 Apple Silicon 芯片上，文本不上传

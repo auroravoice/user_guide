@@ -11,6 +11,8 @@ Auroravoice is a local desktop app for macOS that reads Chinese (and English) te
 
 ![English reading interface](../pics/screenshot_english_reading.png){: style="max-width:80%;height:auto;display:block;margin:16px auto;border:1px solid #ddd;border-radius:6px;"}
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7lehH5ZEo2U?si=AGqQimYwtqsgysTr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Highlights
 
 - **Local inference** — models run on your Apple Silicon Mac; your text never leaves the machine
