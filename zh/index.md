@@ -9,9 +9,31 @@ title: 曦光聆 · 简体中文
 
 曦光聆是一款本地运行的桌面应用：打开一个书籍文件夹（内含 `.txt` 文本），应用会把文本智能分块，用自然真人语音逐段朗读——支持声音克隆、断点续读、语速调节。
 
-![中文朗读界面](../pics/screenshot_chinese_reading.png){: style="max-width:80%;height:auto;display:block;margin:16px auto;border:1px solid #ddd;border-radius:6px;"}
+<div class="showcase">
+  <div class="card">
+    <div class="video-click" data-id="7lehH5ZEo2U">
+      <img src="../pics/video_poster.png" alt="演示视频封面" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/7lehH5ZEo2U/maxresdefault.jpg';" />
+      <span class="play" aria-label="播放演示视频"></span>
+    </div>
+    <div class="cap">演示视频 · 点击播放</div>
+  </div>
+  <div class="card">
+    <img src="../pics/screenshot_chinese_reading.png" alt="中文朗读界面" />
+    <div class="cap">中文朗读界面</div>
+  </div>
+</div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7lehH5ZEo2U?si=AGqQimYwtqsgysTr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<script>
+  document.querySelectorAll('.video-click').forEach(function (el) {
+    el.addEventListener('click', function () {
+      var id = el.getAttribute('data-id');
+      var wrap = document.createElement('div');
+      wrap.className = 'video-wrap';
+      wrap.innerHTML = '<iframe src="https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+      el.parentNode.replaceChild(wrap, el);
+    });
+  });
+</script>
 
 ## 核心特性
 

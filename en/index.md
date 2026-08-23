@@ -9,9 +9,31 @@ title: Auroravoice · English
 
 Auroravoice is a local desktop app for macOS that reads Chinese (and English) text files aloud with natural, human-like voices — fully offline, powered by on-device MLX inference.
 
-![English reading interface](../pics/screenshot_english_reading.png){: style="max-width:80%;height:auto;display:block;margin:16px auto;border:1px solid #ddd;border-radius:6px;"}
+<div class="showcase">
+  <div class="card">
+    <div class="video-click" data-id="7lehH5ZEo2U">
+      <img src="../pics/video_poster.png" alt="Demo video cover" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/7lehH5ZEo2U/maxresdefault.jpg';" />
+      <span class="play" aria-label="Play demo video"></span>
+    </div>
+    <div class="cap">Demo video · click to play</div>
+  </div>
+  <div class="card">
+    <img src="../pics/screenshot_english_reading.png" alt="English reading interface" />
+    <div class="cap">English reading interface</div>
+  </div>
+</div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7lehH5ZEo2U?si=AGqQimYwtqsgysTr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<script>
+  document.querySelectorAll('.video-click').forEach(function (el) {
+    el.addEventListener('click', function () {
+      var id = el.getAttribute('data-id');
+      var wrap = document.createElement('div');
+      wrap.className = 'video-wrap';
+      wrap.innerHTML = '<iframe src="https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+      el.parentNode.replaceChild(wrap, el);
+    });
+  });
+</script>
 
 ## Highlights
 
