@@ -1,4 +1,6 @@
-# 曦光聆 · Auroravoice
+---
+title: 曦光聆 · Auroravoice
+---
 
 **风声雨声读书声，声声入耳。**
 

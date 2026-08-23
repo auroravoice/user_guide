@@ -4,7 +4,6 @@ title: 使用指南
 
 [简介](index.md) · [安装](install.md) · **[使用指南]** · [音色与模型](voices.md) · [FAQ](faq.md) | [English](../en/guide.md)
 
-# 使用指南
 
 ## 1. 打开书籍
 

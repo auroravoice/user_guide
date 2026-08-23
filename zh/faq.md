@@ -4,7 +4,6 @@ title: 常见问题
 
 [简介](index.md) · [安装](install.md) · [使用指南](guide.md) · [音色与模型](voices.md) · **[FAQ]** | [English](../en/faq.md)
 
-# FAQ
 
 **Q：本地引擎需要什么硬件？**
 Apple Silicon Mac（M1 及以上）。模型经 MLX 在 GPU 上推理，Intel Mac 请用远程 API 或 Edge TTS。

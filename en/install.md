@@ -4,7 +4,6 @@ title: Installation
 
 [Intro](index.md) · **[Install]** · [Guide](guide.md) · [Voices & Models](voices.md) · [FAQ](faq.md) | [简体中文](../zh/install.md)
 
-# Installation
 
 ## Requirements
 

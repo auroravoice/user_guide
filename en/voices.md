@@ -4,7 +4,6 @@ title: Voices & Models
 
 [Intro](index.md) · [Install](install.md) · [Guide](guide.md) · **[Voices & Models]** · [FAQ](faq.md) | [简体中文](../zh/voices.md)
 
-# Voices & Models
 
 ## Three engines
 

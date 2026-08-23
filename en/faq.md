@@ -4,7 +4,6 @@ title: FAQ
 
 [Intro](index.md) · [Install](install.md) · [Guide](guide.md) · [Voices & Models](voices.md) · **[FAQ]** | [简体中文](../zh/faq.md)
 
-# FAQ
 
 **Q: What hardware does the local engine need?**
 An Apple Silicon Mac (M1 or later). Models run on the GPU via MLX. On Intel Macs, use the remote API or Edge TTS.

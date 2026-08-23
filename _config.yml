@@ -4,3 +4,18 @@ baseurl: "/user_guide"
 description: 中文文本真人朗读系统 / Natural voice reading for Chinese text
 remote_theme: "jekyll/minima@1e8a445"
 markdown: kramdown
+
+exclude:
+  - README.md
+
+# 顶部导航只显示两个语言入口，避免中英文全部页面挤进菜单
+header_pages:
+  - zh/index.md
+  - en/index.md
+
+# 所有页面统一使用 page 布局（标题由 front matter 的 title 渲染，正文不再重复写 # 大标题）
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page

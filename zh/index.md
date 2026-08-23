@@ -4,7 +4,6 @@ title: 曦光聆 · 简体中文
 
 [简介](index.md) · [安装](install.md) · [使用指南](guide.md) · [音色与模型](voices.md) · [FAQ](faq.md) | **[English](../en/index.md)**
 
-# 曦光聆
 
 **风声雨声读书声，声声入耳。**
 

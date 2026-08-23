@@ -4,7 +4,6 @@ title: 音色与模型
 
 [简介](index.md) · [安装](install.md) · [使用指南](guide.md) · **[音色与模型]** · [FAQ](faq.md) | [English](../en/voices.md)
 
-# 音色与模型
 
 ## 三种引擎
 

@@ -4,7 +4,6 @@ title: Auroravoice · English
 
 [Intro](index.md) · [Install](install.md) · [Guide](guide.md) · [Voices & Models](voices.md) · [FAQ](faq.md) | **[简体中文](../zh/index.md)**
 
-# Auroravoice (曦光聆)
 
 *"The house was quiet and the world was calm. The reader became the book…"*
 

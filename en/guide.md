@@ -4,7 +4,6 @@ title: User Guide
 
 [Intro](index.md) · [Install](install.md) · **[Guide]** · [Voices & Models](voices.md) · [FAQ](faq.md) | [简体中文](../zh/guide.md)
 
-# User Guide
 
 ## 1. Open a book
 
