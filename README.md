@@ -1,2 +1,2 @@
-# auravoice.github.io
+# Auroravoice.github.io
 曦光聆是一款运行在 macOS 上的本地桌面应用，把中文（及英文）文本文件用自然的真人语音朗读出来——文本不出本机，模型本地推理。

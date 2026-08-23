@@ -45,7 +45,7 @@ uv run python main.py --gui browser        # Open in system browser (fallback/de
 
 On first launch a setup wizard appears:
 
-1. Pick a data directory (default `~/.auravoice`)
+1. Pick a data directory (default `~/.Auroravoice`)
 2. Download the default model, or point to an existing model folder on disk
 
 Downloads use a mirror endpoint by default; change it via the `HF_ENDPOINT` environment variable.

@@ -1,14 +1,14 @@
 ---
-title: Auravoice · English
+title: Auroravoice · English
 ---
 
 [Intro](index.md) · [Install](install.md) · [Guide](guide.md) · [Voices & Models](voices.md) · [FAQ](faq.md) | **[简体中文](../zh/index.md)**
 
-# Auravoice (曦光聆)
+# Auroravoice (曦光聆)
 
 *"The house was quiet and the world was calm. The reader became the book…"*
 
-Auravoice is a local desktop app for macOS that reads Chinese (and English) text files aloud with natural, human-like voices — fully offline, powered by on-device MLX inference.
+Auroravoice is a local desktop app for macOS that reads Chinese (and English) text files aloud with natural, human-like voices — fully offline, powered by on-device MLX inference.
 
 ## Highlights
 

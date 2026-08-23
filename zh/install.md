@@ -45,7 +45,7 @@ uv run python main.py --gui browser        # 系统浏览器打开（排障兜�
 
 第一次使用会弹出设置向导：
 
-1. 选择数据目录（默认 `~/.auravoice`）
+1. 选择数据目录（默认 `~/.Auroravoice`）
 2. 下载默认模型，或直接选择本机已有的模型文件夹
 
 模型下载默认走国内镜像（hf-mirror.com），可通过环境变量 `HF_ENDPOINT` 更换。

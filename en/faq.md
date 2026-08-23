@@ -25,7 +25,7 @@ Chunking changes after switching models or editing text — reload the current f
 No. Existing audio is reused and the new voice continues from where generation stopped. Only **Regenerate all** clears everything.
 
 **Q: Where is my data stored?**
-`~/.auravoice` by default (book metadata, audio cache, settings, models, cloned references). Changeable in the first-run wizard.
+`~/.Auroravoice` by default (book metadata, audio cache, settings, models, cloned references). Changeable in the first-run wizard.
 
 **Q: Which text formats are supported?**
 Plain `.txt` files. Put several `.txt` files in one folder to form a book.

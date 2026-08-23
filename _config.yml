@@ -1,4 +1,6 @@
-title: 曦光聆 · Auravoice
+title: 曦光聆 · Auroravoice
+url: "https://auroravoice.github.io"
+baseurl: "/user_guide"
 description: 中文文本真人朗读系统 / Natural voice reading for Chinese text
 remote_theme: "jekyll/minima@1e8a445"
 markdown: kramdown
