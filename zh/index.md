@@ -9,30 +9,119 @@ title: 曦光聆 · 简体中文
 
 曦光聆是一款本地运行的桌面应用：打开一个书籍文件夹（内含 `.txt` 文本），应用会把文本智能分块，用自然真人语音逐段朗读——支持声音克隆、断点续读、语速调节。
 
-<div class="showcase">
-  <div class="card">
-    <div class="video-click" data-id="7lehH5ZEo2U">
-      <img src="../pics/video_poster.png" alt="演示视频封面" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/7lehH5ZEo2U/maxresdefault.jpg';" />
-      <span class="play" aria-label="播放演示视频"></span>
+<div class="hero-carousel" data-carousel>
+  <div class="carousel-viewport">
+    <div class="carousel-track">
+      <div class="carousel-slide">
+        <div class="card">
+          <img class="lightbox-trigger" src="../pics/screenshot_chinese_reading.png" alt="中文朗读界面" />
+          <div class="cap">中文朗读界面 · 点击放大</div>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="card">
+          <img class="lightbox-trigger" src="../pics/screenshot_record_reference_voice.png" alt="录制参考音频" />
+          <div class="cap">录制参考音频 · 点击放大</div>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="card">
+          <img class="lightbox-trigger" src="../pics/screenshot_english_reading.png" alt="英文朗读界面" />
+          <div class="cap">英文朗读界面 · 点击放大</div>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="card">
+          <div class="video-thumb" data-vid="7lehH5ZEo2U">
+            <img src="../pics/video_poster.png" alt="演示视频封面" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/7lehH5ZEo2U/maxresdefault.jpg';" />
+            <span class="play" aria-label="播放演示视频"></span>
+          </div>
+          <div class="cap">演示视频 · 点击播放</div>
+        </div>
+      </div>
     </div>
-    <div class="cap">演示视频 · 点击播放</div>
   </div>
-  <div class="card">
-    <img src="../pics/screenshot_chinese_reading.png" alt="中文朗读界面" />
-    <div class="cap">中文朗读界面</div>
-  </div>
+  <button class="carousel-btn prev" aria-label="上一张">‹</button>
+  <button class="carousel-btn next" aria-label="下一张">›</button>
+  <div class="carousel-dots" aria-label="轮播指示"></div>
+  <div class="carousel-hint">← 左右滑动循环切换 · 点击图片放大 / 视频播放 →</div>
+</div>
+
+<div id="av-lightbox" class="av-lightbox" role="dialog" aria-modal="true" aria-label="图片预览">
+  <button class="close" aria-label="关闭">×</button>
+  <img alt="预览图" />
 </div>
 
 <script>
-  document.querySelectorAll('.video-click').forEach(function (el) {
-    el.addEventListener('click', function () {
-      var id = el.getAttribute('data-id');
-      var wrap = document.createElement('div');
-      wrap.className = 'video-wrap';
-      wrap.innerHTML = '<iframe src="https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-      el.parentNode.replaceChild(wrap, el);
+(function(){
+  document.querySelectorAll('.hero-carousel').forEach(function(carousel){
+    var track = carousel.querySelector('.carousel-track');
+    var slides = carousel.querySelectorAll('.carousel-slide');
+    var dotsWrap = carousel.querySelector('.carousel-dots');
+    var prevBtn = carousel.querySelector('.carousel-btn.prev');
+    var nextBtn = carousel.querySelector('.carousel-btn.next');
+    var n = slides.length, idx = 0;
+    dotsWrap.innerHTML = '';
+    for(var i=0;i<n;i++){
+      var d=document.createElement('button');
+      d.className='dot'+(i===0?' active':'');
+      d.setAttribute('data-index', i);
+      d.setAttribute('aria-label','第'+(i+1)+'张');
+      dotsWrap.appendChild(d);
+    }
+    var dots = dotsWrap.querySelectorAll('.dot');
+    function go(i){
+      idx = (i+n)%n;
+      track.style.transform='translateX('+(-idx*100)+'%)';
+      dots.forEach(function(d,j){ d.classList.toggle('active', j===idx); });
+    }
+    prevBtn.addEventListener('click', function(){ go(idx-1); });
+    nextBtn.addEventListener('click', function(){ go(idx+1); });
+    dotsWrap.addEventListener('click', function(e){
+      if(e.target.classList.contains('dot')) go(parseInt(e.target.getAttribute('data-index'),10));
+    });
+    var startX=0, dx=0, dragging=false;
+    var viewport = carousel.querySelector('.carousel-viewport');
+    function onStart(x){ startX=x; dx=0; dragging=true; track.style.transition='none'; }
+    function onMove(x){ if(!dragging) return; dx=x-startX; track.style.transform='translateX(calc('+(-idx*100)+'% + '+dx+'px))'; }
+    function onEnd(){
+      if(!dragging) return; dragging=false; track.style.transition='';
+      if(Math.abs(dx)>50){ if(dx<0) go(idx+1); else go(idx-1); } else go(idx);
+    }
+    viewport.addEventListener('touchstart', function(e){ onStart(e.touches[0].clientX); }, {passive:true});
+    viewport.addEventListener('touchmove', function(e){ onMove(e.touches[0].clientX); }, {passive:true});
+    viewport.addEventListener('touchend', onEnd);
+    viewport.addEventListener('mousedown', function(e){ onStart(e.clientX); e.preventDefault(); });
+    window.addEventListener('mousemove', onMove);
+    window.addEventListener('mouseup', onEnd);
+    viewport.addEventListener('mouseleave', function(){ if(dragging) onEnd(); });
+    carousel.setAttribute('tabindex','0');
+    carousel.addEventListener('keydown', function(e){ if(e.key==='ArrowLeft') go(idx-1); if(e.key==='ArrowRight') go(idx+1); });
+    carousel.querySelectorAll('.lightbox-trigger').forEach(function(img){
+      img.addEventListener('click', function(){
+        var lb=document.getElementById('av-lightbox');
+        if(!lb) return;
+        var lbImg=lb.querySelector('img');
+        lbImg.src=img.src; lbImg.alt=img.alt;
+        lb.classList.add('open');
+      });
+    });
+    carousel.querySelectorAll('.video-thumb').forEach(function(th){
+      th.addEventListener('click', function(){
+        var vid=th.getAttribute('data-vid');
+        var wrap=document.createElement('div');
+        wrap.className='video-wrap';
+        wrap.innerHTML='<iframe src="https://www.youtube.com/embed/'+vid+'?autoplay=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+        th.replaceWith(wrap);
+      });
     });
   });
+  var lb=document.getElementById('av-lightbox');
+  if(lb){
+    lb.addEventListener('click', function(e){ if(e.target===lb || e.target.classList.contains('close')) lb.classList.remove('open'); });
+    document.addEventListener('keydown', function(e){ if(e.key==='Escape') lb.classList.remove('open'); });
+  }
+})();
 </script>
 
 ## 核心特性
