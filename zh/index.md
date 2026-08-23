@@ -2,7 +2,7 @@
 title: 曦光聆 · 简体中文
 ---
 
-[简介](index.md) · [安装](install.md) · [使用指南](guide.md) · [音色与模型](voices.md) · [FAQ](faq.md) | **[English](../en/index.md)**
+[简介](index.md) · [安装](install.md) · [使用指南](guide.md) · [音色与模型](voices.md) · [FAQ](faq.md) · [隐私政策](privacy.md) | **[English](../en/index.md)**
 
 
 **风声雨声读书声，声声入耳。**

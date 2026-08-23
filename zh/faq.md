@@ -2,7 +2,7 @@
 title: 常见问题
 ---
 
-[简介](index.md) · [安装](install.md) · [使用指南](guide.md) · [音色与模型](voices.md) · **[FAQ]** | [English](../en/faq.md)
+[简介](index.md) · [安装](install.md) · [使用指南](guide.md) · [音色与模型](voices.md) · **[FAQ]** · [隐私政策](privacy.md) | [English](../en/faq.md)
 
 
 **Q：本地引擎需要什么硬件？**

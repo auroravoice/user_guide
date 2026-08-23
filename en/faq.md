@@ -2,7 +2,7 @@
 title: FAQ
 ---
 
-[Intro](index.md) · [Install](install.md) · [Guide](guide.md) · [Voices & Models](voices.md) · **[FAQ]** | [简体中文](../zh/faq.md)
+[Intro](index.md) · [Install](install.md) · [Guide](guide.md) · [Voices & Models](voices.md) · **[FAQ]** · [Privacy](privacy.md) | [简体中文](../zh/faq.md)
 
 
 **Q: What hardware does the local engine need?**

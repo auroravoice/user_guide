@@ -2,7 +2,7 @@
 title: Auroravoice · English
 ---
 
-[Intro](index.md) · [Install](install.md) · [Guide](guide.md) · [Voices & Models](voices.md) · [FAQ](faq.md) | **[简体中文](../zh/index.md)**
+[Intro](index.md) · [Install](install.md) · [Guide](guide.md) · [Voices & Models](voices.md) · [FAQ](faq.md) · [Privacy](privacy.md) | **[简体中文](../zh/index.md)**
 
 
 *"The house was quiet and the world was calm. The reader became the book…"*
