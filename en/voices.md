@@ -34,6 +34,8 @@ Click the 🎤 button next to the voice dropdown:
   - Under 10s can't be saved; 20–40s gives the best quality
 - **Import file**: `.wav` `.mp3` `.flac` `.ogg` `.m4a`, auto-transcoded
 
+![Recording a reference voice](../pics/screenshot_record_reference_voice.png){: style="max-width:80%;height:auto;display:block;margin:16px auto;border:1px solid #ddd;border-radius:6px;"}
+
 > Tip: quiet room, ~20 cm from the mic, natural pace.
 > Advanced: add a same-named `.txt` transcript next to the audio (`x.wav` + `x.txt`) for higher similarity.
 

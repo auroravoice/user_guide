@@ -9,6 +9,8 @@ title: Auroravoice · English
 
 Auroravoice is a local desktop app for macOS that reads Chinese (and English) text files aloud with natural, human-like voices — fully offline, powered by on-device MLX inference.
 
+![English reading interface](../pics/screenshot_english_reading.png){: style="max-width:80%;height:auto;display:block;margin:16px auto;border:1px solid #ddd;border-radius:6px;"}
+
 ## Highlights
 
 - **Local inference** — models run on your Apple Silicon Mac; your text never leaves the machine

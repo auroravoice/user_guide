@@ -34,6 +34,8 @@ title: 音色与模型
   - 不足 10 秒无法保存；20~40 秒效果最佳（甜区）
 - **导入文件**：支持 `.wav` `.mp3` `.flac` `.ogg` `.m4a`，自动转码
 
+![录制参考音色](../pics/screenshot_record_reference_voice.png){: style="max-width:80%;height:auto;display:block;margin:16px auto;border:1px solid #ddd;border-radius:6px;"}
+
 > 建议：安静环境、离麦克风 20cm 左右、自然语速。
 > 进阶：为音频准备同名 `.txt` 转写文件（如 `x.wav` + `x.txt`），可提升克隆相似度。
 
