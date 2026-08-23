@@ -13,6 +13,8 @@ title: Voices & Models
 | Remote API | Gradio client to a remote service | Fallback when local hardware is unavailable |
 | Edge TTS | Online service | Quick start, no model download |
 
+> Note: the **Remote API uses Confucius4** — a built-in Gradio client calls its service directly, with no model download required.
+
 Switch engines from the sidebar dropdown. After switching engines or models, reload the current file (chunking may change).
 
 ## Four voice modes
@@ -40,6 +42,10 @@ Click the 🎤 button next to the voice dropdown:
 > Advanced: add a same-named `.txt` transcript next to the audio (`x.wav` + `x.txt`) for higher similarity.
 
 ## Managing models
+
+> The default model is [`mlx-community/Qwen3-TTS-12Hz-1.7B-Base-4bit`](https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-Base-4bit), which already performs very well in initial testing. For even better quality, you can pick a larger model yourself — e.g. [`mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16`](https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16), verified on an M5 Mac.
+>
+> You can download models directly from their Hugging Face repo pages: [4-bit](https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-Base-4bit/tree/main) · [bf16](https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16/tree/main); or fetch them with `hf download <model-id>` (a.k.a. `huggingface-cli download`) or any other method, then point Settings → Model location at the local folder.
 
 - The **default model** is downloaded via the wizard into `models/` inside your data directory
 - **Model location** in Settings accepts any existing model folder on disk; each subdirectory counts as one model
