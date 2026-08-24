@@ -55,7 +55,7 @@ title: 音色与模型
   </div>
   <div class="voice-card">
     <div class="voice-name">温柔女声 · 瓦尔登湖 <span class="voice-ref">参考：温柔瓦尔登湖.mp3</span></div>
-    <div class="voice-text">“孤村落日残霞，轻烟老树寒鸦，一点飞鸿影下。青山绿水，白草红叶黄花。”<br><span style="color:#888;font-size:0.85em">— 白朴《天净沙·秋》</span></div>
+    <div class="voice-text">“月光如流水一般，静静地泻在这一片叶子和花上。薄薄的青雾浮起在荷塘里，叶子和花仿佛在牛乳中洗过一样。”<br><span style="color:#888;font-size:0.85em">— 朱自清《荷塘月色》</span></div>
     <audio controls preload="metadata" src="{{ '/assets/audio/voices/zh/walden_gentle.mp3' | relative_url }}"></audio>
   </div>
   <div class="voice-card">
