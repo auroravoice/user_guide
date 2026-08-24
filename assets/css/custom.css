@@ -118,8 +118,8 @@
 /* 横向滑动轮播：两张卡片（截图 | 视频） — 不随正文等比放大，限宽居中 */
 .hero-carousel {
   position: relative;
-  width: 100%;
-  max-width: 860px; /* 原 740px 左右，+约120px 适度放大；如需 1100 宽度可改为 880px */
+  width: 90%;
+  max-width: 774px; /* 860px * 0.9 = 774px，按需求缩至 90% */
   margin: 28px auto 10px;
 }
 .carousel-viewport {
