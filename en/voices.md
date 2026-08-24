@@ -43,6 +43,37 @@ Click the 🎤 button next to the voice dropdown:
 > Tip: quiet room, ~20 cm from the mic, natural pace.
 > Advanced: add a same-named `.txt` transcript next to the audio (`x.wav` + `x.txt`) for higher similarity.
 
+## Demos · Cloned Voices
+
+> All samples below are cloned locally with [`Qwen3-TTS-12Hz-1.7B-Base-4bit`](https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-Base-4bit) from reference audio (24kHz). No text leaves your machine. Click ▶ to play.
+
+<div class="voice-demos" markdown="0">
+  <div class="voice-card">
+    <div class="voice-name">Calm Male <span class="voice-ref">ref: Male.wav</span></div>
+    <div class="voice-text">“She walked along the quiet path, humming a gentle tune, with sunlight dancing through the trees.”</div>
+    <audio controls preload="metadata" src="{{ '/assets/audio/voices/en/male_en.mp3' | relative_url }}"></audio>
+  </div>
+  <div class="voice-card">
+    <div class="voice-name">Mature Female <span class="voice-ref">ref: LadyMary.mp3</span></div>
+    <div class="voice-text">“The house was quiet and the world was calm. The reader became the book, and the book became the reader.”</div>
+    <audio controls preload="metadata" src="{{ '/assets/audio/voices/en/ladymary_en.mp3' | relative_url }}"></audio>
+  </div>
+  <div class="voice-card">
+    <div class="voice-name">Soft Female <span class="voice-ref">ref: SoftFemale.mp3</span></div>
+    <div class="voice-text">“In the soft morning light, the lake was still, as if time itself had paused to listen.”</div>
+    <audio controls preload="metadata" src="{{ '/assets/audio/voices/en/softfemale_en.mp3' | relative_url }}"></audio>
+  </div>
+</div>
+
+<style>
+.voice-demos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:16px 0}
+.voice-card{border:1px solid #e3e3e3;border-radius:10px;padding:14px 16px;background:#fafafa}
+.voice-card .voice-name{font-weight:600;margin-bottom:6px}
+.voice-card .voice-ref{font-weight:400;color:#888;font-size:0.85em;margin-left:6px}
+.voice-card .voice-text{color:#555;font-size:0.92em;margin-bottom:10px;line-height:1.5}
+.voice-card audio{width:100%}
+</style>
+
 ## Managing models
 
 > The default model is [`mlx-community/Qwen3-TTS-12Hz-1.7B-Base-4bit`](https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-Base-4bit), which already performs very well in initial testing. For even better quality, you can pick a larger model yourself — e.g. [`mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16`](https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16), verified on an M5 Mac.

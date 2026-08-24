@@ -43,6 +43,37 @@ title: 音色与模型
 > 建议：安静环境、离麦克风 20cm 左右、自然语速。
 > 进阶：为音频准备同名 `.txt` 转写文件（如 `x.wav` + `x.txt`），可提升克隆相似度。
 
+## 试听 · 克隆音色展示
+
+> 以下试听均由本地模型 [`Qwen3-TTS-12Hz-1.7B-Base-4bit`](https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-Base-4bit) 基于参考音频克隆生成（24kHz），文本未出本机。点击 ▶ 试听。
+
+<div class="voice-demos" markdown="0">
+  <div class="voice-card">
+    <div class="voice-name">沉稳男声 <span class="voice-ref">参考：Male.wav</span></div>
+    <div class="voice-text">“夜色已深，窗外的雨轻轻敲着屋檐。她合上书，轻声说，明天又是新的一天。”</div>
+    <audio controls preload="metadata" src="{{ '/assets/audio/voices/zh/male_zh.mp3' | relative_url }}"></audio>
+  </div>
+  <div class="voice-card">
+    <div class="voice-name">温柔女声 · 瓦尔登湖 <span class="voice-ref">参考：温柔瓦尔登湖.mp3</span></div>
+    <div class="voice-text">“瓦尔登湖的清晨，薄雾在湖面上缓缓浮动，时间在这里变得很慢很慢。”</div>
+    <audio controls preload="metadata" src="{{ '/assets/audio/voices/zh/walden_gentle.mp3' | relative_url }}"></audio>
+  </div>
+  <div class="voice-card">
+    <div class="voice-name">清新少女 <span class="voice-ref">参考：蔡紫小小姑娘.mp3</span></div>
+    <div class="voice-text">“小小的姑娘踮起脚尖，在洒满阳光的小路上哼着歌，向着远方跑去。”</div>
+    <audio controls preload="metadata" src="{{ '/assets/audio/voices/zh/caizi_girl.mp3' | relative_url }}"></audio>
+  </div>
+</div>
+
+<style>
+.voice-demos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:16px 0}
+.voice-card{border:1px solid #e3e3e3;border-radius:10px;padding:14px 16px;background:#fafafa}
+.voice-card .voice-name{font-weight:600;margin-bottom:6px}
+.voice-card .voice-ref{font-weight:400;color:#888;font-size:0.85em;margin-left:6px}
+.voice-card .voice-text{color:#555;font-size:0.92em;margin-bottom:10px;line-height:1.5}
+.voice-card audio{width:100%}
+</style>
+
 ## 模型管理
 
 > 默认模型为 [`mlx-community/Qwen3-TTS-12Hz-1.7B-Base-4bit`](https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-Base-4bit)，初步测试效果已经很好。如需更好的效果，也可以自行选择更大的模型——例如 [`mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16`](https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16) 已在 M5 芯片上实测通过。
