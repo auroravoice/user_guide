@@ -115,10 +115,12 @@
   }
 }
 
-/* 横向滑动轮播：两张卡片（截图 | 视频） */
+/* 横向滑动轮播：两张卡片（截图 | 视频） — 不随正文等比放大，限宽居中 */
 .hero-carousel {
   position: relative;
-  margin: 28px 0 10px;
+  width: 100%;
+  max-width: 860px; /* 原 740px 左右，+约120px 适度放大；如需 1100 宽度可改为 880px */
+  margin: 28px auto 10px;
 }
 .carousel-viewport {
   overflow: hidden;
@@ -279,25 +281,16 @@
 .lightbox-trigger { cursor: zoom-in; }
 
 /* ——— 加宽页面正文宽度（minima 默认 $content-width 仅 800px 过窄）——— */
-/* 双重保障：1) Sass 变量已在 _sass/minima/custom-variables.scss 覆为 1200px；2) 此处用高优先级覆盖兜底 */
+/* 双重保障：1) Sass 变量已在 _sass/minima/custom-variables.scss 覆为 1050px；2) 此处用高优先级覆盖兜底 */
 .wrapper {
-  max-width: 1200px !important;
+  max-width: 1050px !important; /* 1050适中，1100稍宽，可按需切换 */
 }
 main.page-content > .wrapper,
 .site-header > .wrapper,
 .site-footer > .wrapper {
-  max-width: 1200px !important;
+  max-width: 1050px !important;
 }
 
-/* 大屏再放宽一点，小屏保持自适应 */
-@media screen and (min-width: 1400px) {
-  .wrapper,
-  main.page-content > .wrapper,
-  .site-header > .wrapper,
-  .site-footer > .wrapper {
-    max-width: 1280px !important;
-  }
-}
 @media screen and (max-width: 800px) {
   .wrapper {
     padding-right: 18px !important;
