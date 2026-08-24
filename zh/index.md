@@ -5,8 +5,6 @@ title: 曦光聆 · 简体中文
 [简介](index.md) · [安装](install.md) · [使用指南](guide.md) · [音色与模型](voices.md) · [FAQ](faq.md) · [隐私政策](privacy.md) | **[English](../en/index.md)**
 
 
-**风声雨声读书声，声声入耳。**
-
 曦光聆是一款本地运行的桌面应用：打开一个书籍文件夹（内含 `.txt` 文本），应用会把文本智能分块，用自然真人语音逐段朗读——支持声音克隆、断点续读、语速调节。
 
 <div class="hero-carousel" data-carousel>

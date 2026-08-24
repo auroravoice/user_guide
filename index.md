@@ -2,8 +2,6 @@
 title: 曦光聆 · Auroravoice
 ---
 
-**风声雨声读书声，声声入耳。**
-
 <div class="hero-carousel" data-carousel>
   <div class="carousel-viewport">
     <div class="carousel-track">
