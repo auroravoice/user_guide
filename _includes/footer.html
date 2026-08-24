@@ -1,0 +1,89 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ '/' | relative_url }}"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        {%- if site.author %}
+        <ul class="contact-list">
+          {% if site.author.name -%}
+            <li class="p-name">{{ site.author.name | escape }}</li>
+          {% endif -%}
+          {% if site.author.email -%}
+            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+          {%- endif %}
+        </ul>
+        {%- endif %}
+      </div>
+      <div class="footer-col">
+        <p>{{ site.description | escape }}</p>
+      </div>
+    </div>
+
+    <div class="social-links">
+      {%- include social.html -%}
+    </div>
+
+    {%- comment -%} 知识产权声明：按 URL 区分中英文 {%- endcomment -%}
+    {% assign is_en = false %}
+    {% assign is_zh = false %}
+    {% if page.url contains "/en/" %}
+      {% assign is_en = true %}
+    {% elsif page.url contains "/zh/" %}
+      {% assign is_zh = true %}
+    {% endif %}
+
+    <div class="ip-notice">
+      {% if is_en %}
+        <div class="ip-notice-en">
+          <p><strong>© {{ site.time | date: "%Y" }} Jianlin Shi / Auroravoice. All Rights Reserved.</strong></p>
+          <p>
+            Source code licensed under <a href="{{ '/LICENSE' | relative_url }}">MIT License</a>.
+            “Auroravoice” / “曦光聆” and its logo are trademarks and artistic works of the author. Unauthorized use is prohibited.
+          </p>
+          <p>
+            UI, icons and visual design are protected by copyright and design patents where applicable.
+            Ideas and concepts themselves are not protected by copyright — only their specific expression (text, graphics, code) is protected.
+          </p>
+        </div>
+      {% elsif is_zh %}
+        <div class="ip-notice-zh">
+          <p><strong>© {{ site.time | date: "%Y" }} Jianlin Shi / 曦光聆 Auroravoice · 保留所有权利</strong></p>
+          <p>
+            本项目源代码基于 <a href="{{ '/LICENSE' | relative_url }}">MIT License</a> 开源。
+            “曦光聆”“Auroravoice”及其图形 Logo 为作者的商标及美术作品，未经授权不得使用。
+          </p>
+          <p>
+            应用界面、图标及外观设计受著作权及外观设计专利保护（如适用）。
+            创意/想法本身不受著作权保护，仅对其具体表达形式（文字、图形、代码等）享有著作权。
+          </p>
+        </div>
+      {% else %}
+        {% comment %} 首页 / 其他页面：中英双语同时展示 {% endcomment %}
+        <div class="ip-notice-zh">
+          <p><strong>© {{ site.time | date: "%Y" }} Jianlin Shi / 曦光聆 Auroravoice · 保留所有权利</strong></p>
+          <p>
+            本项目源代码基于 <a href="{{ '/LICENSE' | relative_url }}">MIT License</a> 开源。
+            “曦光聆”“Auroravoice”及其图形 Logo 为作者的商标及美术作品，未经授权不得使用。
+          </p>
+          <p>
+            应用界面、图标及外观设计受著作权及外观设计专利保护（如适用）。
+            创意/想法本身不受著作权保护，仅对其具体表达形式（文字、图形、代码等）享有著作权。
+          </p>
+        </div>
+        <div class="ip-notice-en" style="margin-top: 12px; padding-top: 12px; border-top: 1px dashed #e8e8e8;">
+          <p><strong>© {{ site.time | date: "%Y" }} Jianlin Shi / Auroravoice. All Rights Reserved.</strong></p>
+          <p>
+            Source code licensed under <a href="{{ '/LICENSE' | relative_url }}">MIT License</a>.
+            “Auroravoice” / “曦光聆” and its logo are trademarks and artistic works. Unauthorized use is prohibited.
+          </p>
+          <p>
+            UI, icons and visual design are protected by copyright and design patents where applicable.
+            Ideas themselves are not protected by copyright — only the specific expression (text, graphics, code) is protected.
+          </p>
+        </div>
+      {% endif %}
+    </div>
+
+  </div>
+</footer>

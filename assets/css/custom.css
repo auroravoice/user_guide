@@ -291,6 +291,21 @@ main.page-content > .wrapper,
   max-width: 1050px !important;
 }
 
+/* 页脚知识产权声明 */
+.ip-notice {
+  border-top: 1px solid #e8e8e8;
+  margin-top: 22px;
+  padding-top: 16px;
+  font-size: 0.82em;
+  color: #6b6b6b;
+  line-height: 1.7;
+}
+.ip-notice p { margin: 0 0 6px; }
+.ip-notice p:last-child { margin-bottom: 0; }
+.ip-notice strong { color: #333; }
+.ip-notice a { color: #555; text-decoration: underline; text-underline-offset: 2px; }
+.ip-notice a:hover { color: #111; }
+
 @media screen and (max-width: 800px) {
   .wrapper {
     padding-right: 18px !important;
