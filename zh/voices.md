@@ -55,7 +55,7 @@ title: 音色与模型
   </div>
   <div class="voice-card">
     <div class="voice-name">温柔女声 · 瓦尔登湖 <span class="voice-ref">参考：温柔瓦尔登湖.mp3</span></div>
-    <div class="voice-text">“瓦尔登湖的清晨，薄雾在湖面上缓缓浮动，时间在这里变得很慢很慢。”</div>
+    <div class="voice-text">“孤村落日残霞，轻烟老树寒鸦，一点飞鸿影下。青山绿水，白草红叶黄花。”<br><span style="color:#888;font-size:0.85em">— 白朴《天净沙·秋》</span></div>
     <audio controls preload="metadata" src="{{ '/assets/audio/voices/zh/walden_gentle.mp3' | relative_url }}"></audio>
   </div>
   <div class="voice-card">
