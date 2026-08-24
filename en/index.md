@@ -132,18 +132,18 @@ Auroravoice is a local desktop app for macOS that reads Chinese (and English) te
 
 ## Highlights
 
-- **Local inference** — models run on your Apple Silicon Mac; your text never leaves the machine
-- **Listen while generating** — chunk-by-chunk synthesis, playback starts immediately
-- **Voice cloning** — read a sample in-app or import audio; a personal voice in under a minute
-- **Resume anywhere** — progress auto-saved every few seconds; synthesis picks up where it stopped
-- **Multi-engine** — local MLX (recommended), remote API, or Edge TTS
-- **Bilingual UI** — 中文 / English, 5 preset themes
+- 🖥️ **Local inference** — models run on your Apple Silicon Mac; your text never leaves the machine
+- 📖 **Listen while generating** — chunk-by-chunk synthesis, playback starts immediately
+- 🎙️ **Voice cloning** — read a sample in-app or import audio; a personal voice in under a minute
+- 🔖 **Resume anywhere** — progress auto-saved every few seconds; synthesis picks up where it stopped
+- ⚡ **Multi-engine** — local MLX (recommended), remote API, or Edge TTS
+- 🌐 **Bilingual UI** — 中文 / English, 5 preset themes
 
 ## Who it's for
 
-- Anyone who'd rather *listen* to novels and articles
-- Privacy-conscious users who want TTS fully offline
-- People who want text read in their own voice
+- 📚 Anyone who'd rather *listen* to novels and articles
+- 🔒 Privacy-conscious users who want TTS fully offline
+- 🎙️ People who want text read in their own voice
 
 > 💬 Have ideas or issues? [Submit feedback & suggestions →](https://github.com/auroravoice/user_guide/issues/new?template=feedback.yml)
 
