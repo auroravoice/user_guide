@@ -4,6 +4,11 @@ title: 安装与启动
 
 [简介](index.md) · **[安装]** · [使用指南](guide.md) · [音色与模型](voices.md) · [FAQ](faq.md) · [隐私政策](privacy.md) | [English](../en/install.md)
 
+> ### 🍎 从 App Store 一键安装（即将上线）
+>
+> 未来可直接在 **Apple App Store / Mac App Store** 搜索“**曦光聆 Auroravoice**”一键下载安装，开箱即用，无需手动配置 Python、uv、依赖等环境，可省去本页所有手动安装步骤。
+>
+> **目前版本正在 Apple 审核中，敬请期待！**
 
 ## 环境要求
 
@@ -14,7 +19,9 @@ title: 安装与启动
 | 包管理 | [uv](https://docs.astral.sh/uv/) |
 | ffmpeg | 可选，导入非 WAV 参考音频时需要 |
 
-## 三步启动
+## 手动安装 · 三步启动
+
+> *App Store 上线前，请使用以下手动方式（适合开发者/抢先体验）。*
 
 ```bash
 git clone <仓库地址>

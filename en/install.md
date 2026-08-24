@@ -4,6 +4,11 @@ title: Installation
 
 [Intro](index.md) · **[Install]** · [Guide](guide.md) · [Voices & Models](voices.md) · [FAQ](faq.md) · [Privacy](privacy.md) | [简体中文](../zh/install.md)
 
+> ### 🍎 Install from the App Store (Coming Soon)
+>
+> Soon you'll be able to download **Auroravoice** directly from the **Apple App Store / Mac App Store** — just search for "Auroravoice" and install with one click. No need to manually set up Python, uv, or other dependencies. This will replace all manual steps below.
+>
+> **Currently under Apple review — stay tuned!**
 
 ## Requirements
 
@@ -14,7 +19,9 @@ title: Installation
 | Tooling | [uv](https://docs.astral.sh/uv/) |
 | ffmpeg | Optional — needed to import non-WAV reference audio |
 
-## Three steps
+## Manual Installation · Three Steps
+
+> *Before the App Store release, use the manual method below (for developers / early access).*
 
 ```bash
 git clone <repository-url>
