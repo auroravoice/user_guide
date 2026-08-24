@@ -14,6 +14,12 @@ Auroravoice is a local desktop app for macOS that reads Chinese (and English) te
     <div class="carousel-track">
       <div class="carousel-slide">
         <div class="card">
+          <img class="lightbox-trigger" src="../pics/En_splashscreen.png" alt="Auroravoice splash screen" />
+          <div class="cap">Splash screen · click to enlarge</div>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="card">
           <img class="lightbox-trigger" src="../pics/screenshot_english_reading.png" alt="English reading interface" />
           <div class="cap">English reading interface · click to enlarge</div>
         </div>

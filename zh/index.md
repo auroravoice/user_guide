@@ -14,6 +14,12 @@ title: 曦光聆 · 简体中文
     <div class="carousel-track">
       <div class="carousel-slide">
         <div class="card">
+          <img class="lightbox-trigger" src="../pics/Zh_splashscreen.png" alt="曦光聆启动页" />
+          <div class="cap">启动页 · 点击放大</div>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="card">
           <img class="lightbox-trigger" src="../pics/screenshot_chinese_reading.png" alt="中文朗读界面" />
           <div class="cap">中文朗读界面 · 点击放大</div>
         </div>
