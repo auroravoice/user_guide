@@ -29,4 +29,6 @@ No. Existing audio is reused and the new voice continues from where generation s
 **Q: Which text formats are supported?**
 Plain `.txt` files. Put several `.txt` files in one folder to form a book.
 
+> 💬 Didn't find the answer? [Submit feedback & suggestions →](https://github.com/auroravoice/user_guide/issues/new?template=feedback.yml)
+
 [Back to intro](index.md)

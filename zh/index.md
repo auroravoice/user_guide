@@ -144,4 +144,6 @@ title: 曦光聆 · 简体中文
 - 在意隐私、希望语音合成完全离线的人
 - 想要用自己的声音来朗读文字的人
 
+> 💬 有想法或遇到问题？[点此提交反馈与建议 →](https://github.com/auroravoice/user_guide/issues/new?template=feedback.yml)
+
 下一页：[安装与启动 →](install.md)

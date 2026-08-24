@@ -29,4 +29,6 @@ macOS 需两层授权：① 应用内的浏览器内核授权；② 系统设置
 **Q：支持哪些文本格式？**
 `.txt` 纯文本。把若干 `.txt` 放进一个文件夹即是一本书。
 
+> 💬 没找到答案？[提交反馈与建议 →](https://github.com/auroravoice/user_guide/issues/new?template=feedback.yml)
+
 [返回简介](index.md)

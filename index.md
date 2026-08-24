@@ -144,3 +144,7 @@ title: 曦光聆 · Auroravoice
 ## 文档结构
 
 每个语言版本包含 5 页：**简介 → 安装 → 使用指南 → 音色与模型 → FAQ**。
+
+---
+
+> 💬 **反馈与建议 / Feedback**：有想法或遇到问题？[点此提交反馈](https://github.com/auroravoice/user_guide/issues/new?template=feedback.yml) / [Submit feedback](https://github.com/auroravoice/user_guide/issues/new?template=feedback.yml)

@@ -33,6 +33,19 @@
       {% assign is_zh = true %}
     {% endif %}
 
+    <div class="feedback-cta" style="text-align: center; margin: 18px 0 20px; padding: 14px; background: #f8f9fa; border-radius: 8px; border: 1px solid #e8e8e8;">
+      {% if is_en %}
+        <a href="https://github.com/auroravoice/user_guide/issues/new?template=feedback.yml" target="_blank" rel="noopener" style="font-weight: 600; text-decoration: none;">💬 Feedback & Suggestions →</a>
+        <span style="color: #666; font-size: 0.9em; margin-left: 8px;">We'd love to hear from you</span>
+      {% elsif is_zh %}
+        <a href="https://github.com/auroravoice/user_guide/issues/new?template=feedback.yml" target="_blank" rel="noopener" style="font-weight: 600; text-decoration: none;">💬 反馈与建议 →</a>
+        <span style="color: #666; font-size: 0.9em; margin-left: 8px;">欢迎提交你的想法</span>
+      {% else %}
+        <a href="https://github.com/auroravoice/user_guide/issues/new?template=feedback.yml" target="_blank" rel="noopener" style="font-weight: 600; text-decoration: none;">💬 反馈与建议 / Feedback →</a>
+        <span style="color: #666; font-size: 0.9em; margin-left: 8px;">Feedback & Suggestions welcome</span>
+      {% endif %}
+    </div>
+
     <div class="ip-notice">
       {% if is_en %}
         <div class="ip-notice-en">

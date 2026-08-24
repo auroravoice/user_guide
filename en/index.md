@@ -145,4 +145,6 @@ Auroravoice is a local desktop app for macOS that reads Chinese (and English) te
 - Privacy-conscious users who want TTS fully offline
 - People who want text read in their own voice
 
+> 💬 Have ideas or issues? [Submit feedback & suggestions →](https://github.com/auroravoice/user_guide/issues/new?template=feedback.yml)
+
 Next: [Installation →](install.md)

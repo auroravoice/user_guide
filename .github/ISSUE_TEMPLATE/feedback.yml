@@ -1,0 +1,66 @@
+name: Feedback / 用户反馈
+description: Submit feedback, feature requests or suggestions / 提交使用反馈、功能建议或想法
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your feedback! / 感谢反馈！
+        Please fill in English or 中文都可。/ You can write in either language.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type / 反馈类型
+      description: Choose one / 请选择一项
+      options:
+        - Feature request / 功能建议
+        - Experience feedback / 使用体验
+        - Bug report / 问题反馈
+        - Other / 其他
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: content
+    attributes:
+      label: Details / 详细描述
+      description: Describe your suggestion or issue clearly / 请清晰描述你的建议或问题
+      placeholder: |
+        EN: I would like to... / I encountered...
+        中文：我希望增加... / 我在使用...时遇到...
+    validations:
+      required: true
+
+  - type: textarea
+    id: scene
+    attributes:
+      label: Context / Steps to reproduce / 使用场景 / 复现步骤
+      description: When did this come up? For bugs, how to reproduce? / 在什么场景下产生的？如果是 Bug 请写复现步骤
+      placeholder: |
+        EN: When I was reading... / Steps: 1. Open... 2. Click...
+        中文：在阅读...时 / 步骤：1. 打开... 2. 点击...
+
+  - type: input
+    id: version
+    attributes:
+      label: App Version / System Info / 版本与系统
+      description: e.g. app version, macOS version, chip / 例如应用版本、系统版本、芯片型号
+      placeholder: "e.g. v0.3.0 / macOS 14.5 / M2"
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact (optional) / 联系方式（选填）
+      description: Email or other way to follow up / 邮箱或其他，方便后续跟进
+      placeholder: "email@example.com"
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation / 确认
+      options:
+        - label: I have searched existing issues and confirm no duplicate / 我已搜索现有 Issue，确认无重复提交
+          required: true
