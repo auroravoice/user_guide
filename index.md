@@ -31,8 +31,8 @@ title: 曦光聆 · Auroravoice
       </div>
       <div class="carousel-slide">
         <div class="card">
-          <div class="video-thumb" data-vid="7lehH5ZEo2U">
-            <img src="pics/video_poster.png" alt="演示视频封面" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/7lehH5ZEo2U/maxresdefault.jpg';" />
+          <div class="video-thumb" data-vid="qzCEzKN36EU">
+            <img src="pics/video_poster.png" alt="演示视频封面" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/qzCEzKN36EU/maxresdefault.jpg';" />
             <span class="play" aria-label="播放演示视频"></span>
           </div>
           <div class="cap">演示视频 · 点击播放</div>

@@ -39,7 +39,7 @@ Auroravoice is a local desktop app for macOS that reads Chinese (and English) te
       <div class="carousel-slide">
         <div class="card">
           <div class="video-thumb" data-vid="qzCEzKN36EU">
-            <img src="../pics/video_poster.png" alt="Demo video cover" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/7lehH5ZEo2U/maxresdefault.jpg';" />
+            <img src="../pics/video_poster.png" alt="Demo video cover" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/qzCEzKN36EU/maxresdefault.jpg';" />
             <span class="play" aria-label="Play demo video"></span>
           </div>
           <div class="cap">Demo video · click to play</div>
