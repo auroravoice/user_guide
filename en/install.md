@@ -4,11 +4,11 @@ title: Installation
 
 [Intro](index.md) · **[Install]** · [Guide](guide.md) · [Voices & Models](voices.md) · [FAQ](faq.md) · [Privacy](privacy.md) | [简体中文](../zh/install.md)
 
-> ### 🍎 Install from the App Store (Coming Soon)
+> ### 🍎 Install from the App Store
 >
-> Soon you'll be able to download **Auroravoice** directly from the **Apple App Store / Mac App Store** — just search for "Auroravoice" and install with one click. No need to manually set up Python, uv, or other dependencies. This will replace all manual steps below.
+> Download **Auroravoice** directly from the **Mac App Store** — just click the link below and install with one click. No need to manually set up Python, uv, or other dependencies.
 >
-> **Currently under Apple review — stay tuned!**
+> **[Download on the Mac App Store →](https://apps.apple.com/us/app/auroravoice/id6804346914?mt=12)**
 
 ## Requirements
 
@@ -21,7 +21,9 @@ title: Installation
 
 ## Manual Installation · Three Steps
 
-> *Before the App Store release, use the manual method below (for developers / early access).*
+> *Prefer a developer install or want to build from source? Use the manual method below.*
+>
+> ⚠️ **The source code repository will be open-sourced soon** — we are currently tidying up the codebase. Stay tuned!
 
 ```bash
 git clone <repository-url>
