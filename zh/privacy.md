@@ -2,7 +2,7 @@
 title: 隐私政策
 ---
 
-[简介](index.md) · [安装](install.md) · [使用指南](guide.md) · [音色与模型](voices.md) · [FAQ](faq.md) · **[隐私政策]** | [English](../en/privacy.md)
+[简介](index.md) · [安装](install.md) · [使用指南](guide.md) · [音色与模型](voices.md) · [FAQ](faq.md) · **[隐私政策]** · [更新日志](changelog.md) | [English](../en/privacy.md)
 
 最后更新：2026-08-23
 

@@ -2,7 +2,7 @@
 title: 安装与启动
 ---
 
-[简介](index.md) · **[安装]** · [使用指南](guide.md) · [音色与模型](voices.md) · [FAQ](faq.md) · [隐私政策](privacy.md) | [English](../en/install.md)
+[简介](index.md) · **[安装]** · [使用指南](guide.md) · [音色与模型](voices.md) · [FAQ](faq.md) · [隐私政策](privacy.md) · [更新日志](changelog.md) | [English](../en/install.md)
 
 > ### 🍎 从 App Store 一键安装
 >

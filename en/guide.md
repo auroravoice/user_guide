@@ -2,7 +2,7 @@
 title: User Guide
 ---
 
-[Intro](index.md) · [Install](install.md) · **[Guide]** · [Voices & Models](voices.md) · [FAQ](faq.md) · [Privacy](privacy.md) | [简体中文](../zh/guide.md)
+[Intro](index.md) · [Install](install.md) · **[Guide]** · [Voices & Models](voices.md) · [FAQ](faq.md) · [Privacy](privacy.md) · [Changelog](changelog.md) | [简体中文](../zh/guide.md)
 
 
 ## 1. Open a book
@@ -19,6 +19,7 @@ title: User Guide
 4. Watch the progress bar; finished chunks are **playable immediately**
 
 > Clicking Start again after an interruption resumes from where it stopped — completed chunks are reused, never re-generated.
+> In fact you usually don't need to click at all: just **play** a partially generated chapter and the app keeps generating the rest in the background, playing what's ready while the remainder catches up.
 
 ## 3. Playback
 
@@ -37,7 +38,11 @@ After switching voices, generation normally **continues** (existing audio kept).
 
 ## 5. Automatic progress saving
 
-Your current file, paragraph and position are saved every 5 seconds — plus immediately on pause, stop, or file switch. Reopening the app restores everything.
+Progress is remembered **per file (chapter)**: position, in-chunk offset, and bookmark are saved every 5 seconds — plus immediately on pause, stop, or file switch.
+
+- Returning to a chapter restores your last position, scrolled into view with a brief flash
+- Reopening the app reopens the last book and resumes playback
+- Auto chapter advance is the exception: a new chapter starts from the beginning (continuous with the previous one), with missing audio generated automatically
 
 ## 6. Settings
 

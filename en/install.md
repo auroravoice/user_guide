@@ -2,7 +2,7 @@
 title: Installation
 ---
 
-[Intro](index.md) · **[Install]** · [Guide](guide.md) · [Voices & Models](voices.md) · [FAQ](faq.md) · [Privacy](privacy.md) | [简体中文](../zh/install.md)
+[Intro](index.md) · **[Install]** · [Guide](guide.md) · [Voices & Models](voices.md) · [FAQ](faq.md) · [Privacy](privacy.md) · [Changelog](changelog.md) | [简体中文](../zh/install.md)
 
 > ### 🍎 Install from the App Store
 >

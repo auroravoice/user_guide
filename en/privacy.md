@@ -2,7 +2,7 @@
 title: Privacy Policy
 ---
 
-[Intro](index.md) · [Install](install.md) · [Guide](guide.md) · [Voices & Models](voices.md) · [FAQ](faq.md) · **[Privacy]** | [简体中文](../zh/privacy.md)
+[Intro](index.md) · [Install](install.md) · [Guide](guide.md) · [Voices & Models](voices.md) · [FAQ](faq.md) · **[Privacy]** · [Changelog](changelog.md) | [简体中文](../zh/privacy.md)
 
 Last updated: 2026-08-23
 

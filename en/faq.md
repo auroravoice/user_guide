@@ -2,7 +2,7 @@
 title: FAQ
 ---
 
-[Intro](index.md) · [Install](install.md) · [Guide](guide.md) · [Voices & Models](voices.md) · **[FAQ]** · [Privacy](privacy.md) | [简体中文](../zh/faq.md)
+[Intro](index.md) · [Install](install.md) · [Guide](guide.md) · [Voices & Models](voices.md) · **[FAQ]** · [Privacy](privacy.md) · [Changelog](changelog.md) | [简体中文](../zh/faq.md)
 
 
 **Q: What hardware does the local engine need?**
@@ -22,6 +22,12 @@ Chunking changes after switching models or editing text — reload the current f
 
 **Q: Do I have to regenerate everything after switching voices?**
 No. Existing audio is reused and the new voice continues from where generation stopped. Only **Regenerate all** clears everything.
+
+**Q: What happens if I play a chapter that isn't fully generated?**
+Just press play: ready chunks start immediately while the app keeps generating the rest in the background — listen as far as it's generated, no need to click "Start" manually. It won't auto-trigger if the model is missing or the task fails to start; start it manually then.
+
+**Q: Will I lose my place when I switch chapters back and forth?**
+No. Progress is remembered per file (chapter); returning restores your last position, scrolled into view with a brief flash, and restarting the app resumes too. Auto chapter advance is the exception — a new chapter starts from the beginning to stay continuous with the previous one.
 
 **Q: Where is my data stored?**
 `~/.Auroravoice` by default (book metadata, audio cache, settings, models, cloned references). Changeable in the first-run wizard.
